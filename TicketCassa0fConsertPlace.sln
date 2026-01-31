@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketCassa0fConsertPlace", "TicketCassa0fConsertPlace\TicketCassa0fConsertPlace.csproj", "{B5AC456E-EA22-4434-892C-8886BB999805}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5AC456E-EA22-4434-892C-8886BB999805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AC456E-EA22-4434-892C-8886BB999805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AC456E-EA22-4434-892C-8886BB999805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AC456E-EA22-4434-892C-8886BB999805}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CF88CAE-67BC-46ED-8466-3C1A1FB3B4F8}
+	EndGlobalSection
+EndGlobal

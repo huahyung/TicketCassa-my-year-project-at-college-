@@ -1,0 +1,93 @@
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.exe.config
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.exe
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.pdb
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\App.g.cs
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace_MarkupCompile.cache
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace_MarkupCompile.lref
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\MainWindow.baml
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.g.resources
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.Properties.Resources.resources
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.exe
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.pdb
+C:\Users\Asus\Desktop\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.exe.config
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.exe.config
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.exe
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.pdb
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignColors.dll
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.exe.config
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\App.g.cs
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace_MarkupCompile.cache
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace_MarkupCompile.lref
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\App.baml
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\MainWindow.baml
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.g.resources
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.Properties.Resources.resources
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCa.6B174219.Up2Date
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.exe
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.pdb
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window1.g.cs
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window1.baml
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MySql.Data.dll
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window2.g.cs
+C:\Users\Asus\Desktop\учеба без ч\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window2.baml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.exe.config
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.exe
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\TicketCassa0fConsertPlace.pdb
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignColors.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window1.g.cs
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window2.g.cs
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\App.g.cs
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace_MarkupCompile.cache
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace_MarkupCompile.lref
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\App.baml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\MainWindow.baml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window1.baml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window2.baml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.g.resources
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.Properties.Resources.resources
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCa.6B174219.Up2Date
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.exe
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.pdb
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window3.g.cs
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\Window3.baml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\InteractiveDataDisplay.WPF.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.Reactive.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\InteractiveDataDisplay.WPF.pdb
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.Reactive.xml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\WpfMessageBox.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\WpfMessageBox.xml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.Reactive.Linq.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.Reactive.Linq.xml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\obj\Debug\TicketCassa0fConsertPlace.exe.config
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\ExcelDataReader.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.ValueTuple.dll
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\ExcelDataReader.pdb
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\ExcelDataReader.xml
+C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\System.ValueTuple.xml

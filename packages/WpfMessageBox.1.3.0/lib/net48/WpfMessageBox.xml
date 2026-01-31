@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WpfMessageBox</name>
+    </assembly>
+    <members>
+        <member name="M:WpfMessageBoxLibrary.WindowMain.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfMessageBoxLibrary.WpfMessageBox">
+            <summary>
+            Displays a message box.
+            </summary>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.String)">
+            <summary>
+            Displays a message box with the specified text.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.Windows.Window,System.String)">
+            <summary>
+            Displays a message box in front of the specified Window and with the specified text.
+            </summary>
+            <param name="owner">A Window that represents the owner window of the message box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.String,System.String)">
+            <summary>
+            Displays a message box with the specified text and title.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="title">The text to display in the title bar of the message box.</param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.Windows.Window,System.String,System.String)">
+            <summary>
+            Displays a message box in front of the specified Window and with the specified text and title.
+            </summary>
+            <param name="owner">A Window that represents the owner window of the message box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="title">The text to display in the title bar of the message box.</param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton)">
+            <summary>
+            Displays a message box with specified text, title, and button.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="title">The text to display in the title bar of the message box.</param>
+            <param name="button">
+            One of the MessageBoxButton values that specifies which button to display in the message box.
+            </param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton)">
+            <summary>
+            Displays a message box in front of the specified Window and with the specified text, title, and button.
+            </summary>
+            <param name="owner">A Window that represents the owner window of the message box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="title">The text to display in the title bar of the message box.</param>
+            <param name="button">
+            One of the MessageBoxButton values that specifies which button to display in the message box.
+            </param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)">
+            <summary>
+            Displays a message box with specified text, title, button, and image.
+            </summary>
+            <param name="text">The text to display in the message box.</param>
+            <param name="title">The text to display in the title bar of the message box.</param>
+            <param name="button">
+            One of the MessageBoxButton values that specifies which button to display in the message box.
+            </param>
+            <param name="image">
+            One of the MessageBoxImage values that specifies which image to display in the message box.
+            </param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)">
+            <summary>
+            Displays a message box in front of the specified Window and with the specified text, title, button, and image.
+            </summary>
+            <param name="owner">A Window that represents the owner window of the message box.</param>
+            <param name="text">The text to display in the message box.</param>
+            <param name="title">The text to display in the title bar of the message box.</param>
+            <param name="button">
+            One of the MessageBoxButton values that specifies which button to display in the message box.
+            </param>
+            <param name="image">
+            One of the MessageBoxImage values that specifies which image to display in the message box.
+            </param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(WpfMessageBoxLibrary.WpfMessageBoxProperties@)">
+            <summary>
+            Displays a message box with the specified properties.
+            </summary>
+            <param name="properties">The WpfMessageBoxProperties to apply to the message box.</param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBox.Show(System.Windows.Window,WpfMessageBoxLibrary.WpfMessageBoxProperties@)">
+            <summary>
+            Displays a message box in front of the specified Window and with the specified properties.
+            </summary>
+            <param name="owner">A Window that represents the owner window of the message box.</param>
+            <param name="properties">The WpfMessageBoxProperties to apply to the message box.</param>
+            <returns>One of the MessageBoxResult values.</returns>
+        </member>
+        <member name="T:WpfMessageBoxLibrary.WpfMessageBoxProperties">
+            <summary>
+            The properties of a <see cref="T:WpfMessageBoxLibrary.WpfMessageBox" />.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.Button">
+            <summary>
+            Gets or sets the buttons used.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.ButtonCancelText">
+            <summary>
+            Gets or sets the "Cancel" button text.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.ButtonNoText">
+            <summary>
+            Gets or sets the "No" button text.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.ButtonOkText">
+            <summary>
+            Gets or sets the "OK" button text.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.ButtonYesText">
+            <summary>
+            Gets or sets the "Yes" button text.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.CheckBoxText">
+            <summary>
+            Gets or sets the checkbox text.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.Header">
+            <summary>
+            Gets or sets the header text.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.Image">
+            <summary>
+            Gets or sets the image.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.IsCheckBoxChecked">
+            <summary>
+            Gets or sets a value indicating whether the checkbox should be checked by default.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.IsCheckBoxVisible">
+            <summary>
+            Gets or sets a value indicating whether the checkbox should be shown.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.IsTextBoxVisible">
+            <summary>
+            Gets or sets a value indicating whether the textbox should be shown.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.Text">
+            <summary>
+            Gets or sets the text.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.TextBoxText">
+            <summary>
+            Gets or sets the textbox text.
+            </summary>
+        </member>
+        <member name="P:WpfMessageBoxLibrary.WpfMessageBoxProperties.Title">
+            <summary>
+            Gets or sets the title.
+            </summary>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.WpfMessageBoxProperties.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WpfMessageBoxLibrary.WpfMessageBoxProperties" /> class.
+            </summary>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.Extensions.AddMnemonic(System.String)">
+            <summary>
+            Adds the WPF keyboard accelerator '_' in front of the first character of the specified string if it doesn't
+            already contain an accelerator.
+            </summary>
+            <param name="input">The string to modify.</param>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.Extensions.ToImageSource(System.Drawing.Icon)">
+            <summary>
+            Tranforms the specified Icon instance to an ImageSource.
+            </summary>
+            <param name="icon">The Icon to transform.</param>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.LocalizationHelper.GetCancelButtonText">
+            <summary>
+            Returns the localized string of the native MessageBox "Cancel" button from user32.dll.
+            </summary>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.LocalizationHelper.GetNoButtonText">
+            <summary>
+            Returns the localized string of the native MessageBox "No" button from user32.dll.
+            </summary>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.LocalizationHelper.GetOkButtonText">
+            <summary>
+            Returns the localized string of the native MessageBox "OK" button from user32.dll.
+            </summary>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.LocalizationHelper.GetYesButtonText">
+            <summary>
+            Returns the localized string of the native MessageBox "Yes" button from user32.dll.
+            </summary>
+        </member>
+        <member name="M:WpfMessageBoxLibrary.LocalizationHelper.GetUserString(System.UInt32)">
+            <summary>
+            Returns a user String from user32.dll. See the list of ID: http://www.tech-archive.net/Archive/Development/microsoft.public.win32.programmer.kernel/2010-02/msg00129.html
+            </summary>
+            <param name="stringId">The id of the String.</param>
+        </member>
+    </members>
+</doc>
