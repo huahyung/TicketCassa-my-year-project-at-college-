@@ -1,0 +1,10 @@
+<FileList>
+	<File Reference="ActiproSoftware.Shell.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Shell (for WPF)" BlendCategory="Actipro Shell (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.Shell.ShellListView" />
+			<Item Type="ActiproSoftware.Windows.Controls.Shell.ShellTreeListBox" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

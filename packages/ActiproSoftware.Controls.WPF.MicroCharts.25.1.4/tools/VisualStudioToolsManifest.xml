@@ -1,0 +1,15 @@
+<FileList>
+	<File Reference="ActiproSoftware.MicroCharts.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Micro Charts (for WPF)" BlendCategory="Actipro Micro Charts (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.MicroCharts.MicroBoxPlot" />
+			<Item Type="ActiproSoftware.Windows.Controls.MicroCharts.MicroBulletGraph" />
+			<Item Type="ActiproSoftware.Windows.Controls.MicroCharts.MicroCandlestickChart" />
+			<Item Type="ActiproSoftware.Windows.Controls.MicroCharts.MicroHeatMapPresenter" />
+			<Item Type="ActiproSoftware.Windows.Controls.MicroCharts.MicroSegmentChart" />
+			<Item Type="ActiproSoftware.Windows.Controls.MicroCharts.MicroTrendIndicator" />
+			<Item Type="ActiproSoftware.Windows.Controls.MicroCharts.MicroXYChart" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

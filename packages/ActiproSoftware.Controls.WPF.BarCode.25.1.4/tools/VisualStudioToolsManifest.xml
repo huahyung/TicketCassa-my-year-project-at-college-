@@ -1,0 +1,9 @@
+<FileList>
+	<File Reference="ActiproSoftware.BarCode.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Bar Code (for WPF)" BlendCategory="Actipro Bar Code (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.BarCode.BarCode" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

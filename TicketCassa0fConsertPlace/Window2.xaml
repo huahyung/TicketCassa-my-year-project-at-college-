@@ -5,99 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicketCassa0fConsertPlace"
         xmlns:d3="clr-namespace:InteractiveDataDisplay.WPF;assembly=InteractiveDataDisplay.WPF"
+        xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
         mc:Ignorable="d"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Background="#FFE7E7"
-        Title="Билетная касса" WindowState="Maximized"  WindowStartupLocation="CenterOwner" d:DesignHeight="1078.96" d:DesignWidth="1724">
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:actipro="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+        Background="#0f1a2b"
+        Title="Билетная касса" WindowState="Maximized"  WindowStartupLocation="CenterOwner" d:DesignHeight="1078.96" d:DesignWidth="1724" Loaded="Window_Loaded_1">
 
-    <Grid Background="#FFE7E7">
-        <Border Margin="36,30,52,30" Background="#ffffff" CornerRadius="50"  >
+    <Grid  Background="#e0e0e0" x:Name="b0">
+
+        <Border x:Name="b3" Margin="36,30,52,30" Background="#e0e0e0" CornerRadius="50"  >
             <Grid>
-                <DatePicker x:Name="cl" Background="#FFFFB7C5" Margin="804,10,699,0" VerticalAlignment="Top" Height="36" FontFamily="Franklin Gothic Medium" FontSize="18" Foreground="#FFD5F3D8"/>
+                <DatePicker x:Name="cl" Background="#e3e3e3"   Margin="176,76,1327,0" VerticalAlignment="Top" Height="36" FontFamily="Franklin Gothic Medium" FontSize="18" Foreground="black"/>
 
 
-                <Border  Background="#FFB7C5" CornerRadius="50,0,0,50" HorizontalAlignment="Left" Width="105">
-                    <StackPanel Margin="10">
-                        <Button  Width="51" Height="46" BorderThickness="0" FontFamily="Franklin Gothic Medium"  Click="mainw_Click" Margin="0,80,0,10" Foreground="Black">
-                            <Button.Background>
-                                <ImageBrush ImageSource="/home2.png" Stretch="Uniform"/>
-                            </Button.Background>
-                        </Button>
 
-                        <Menu x:Name="menu" Background="#FFFFB7C5" Width="83" Margin="0,20,0,10" Height="45">
-                            <Menu.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <VirtualizingStackPanel Orientation="Vertical"/>
-                                </ItemsPanelTemplate>
-                            </Menu.ItemsPanel>
 
-                            <MenuItem FontFamily="Franklin Gothic Medium" 
-                              
-                             MouseEnter="MenuItem_MouseEnter"
-                             Width="Auto" Margin="19,2,18,-2" FontSize="12" >
-                                <MenuItem.Background>
-                                    <ImageBrush ImageSource="/list.png" Stretch="Uniform"/>
-                                </MenuItem.Background>
+                <Grid Margin="105,10,0,0" x:Name="canvas2" Visibility="Visible">
 
-                                <MenuItem x:Name="tickets" HorizontalAlignment="Center" Click="tickets_Click" FontFamily="Franklin Gothic Medium"  Header="Билеты"/>
-                                <MenuItem HorizontalAlignment="Center" x:Name="conserts" Click="concerts_Click" FontFamily="Franklin Gothic Medium"  Header="Концерты"/>
-                                <MenuItem HorizontalAlignment="Center" x:Name="typetic" Click="typetic_Click" FontFamily="Franklin Gothic Medium"  Header="Виды Билетов"/>
-                                <MenuItem HorizontalAlignment="Center" x:Name="sotr" Click="sotr_Click" FontFamily="Franklin Gothic Medium"  Header="Сотрудники"/>
-                                <MenuItem HorizontalAlignment="Center" x:Name="dolj" Click="dolj_Click" FontFamily="Franklin Gothic Medium"  Header="Должности"/>
+                    <d3:Chart x:Name="b5" Background="#FFFBFBFB"   Margin="62,587,74,73">
 
-                            </MenuItem>
-                        </Menu>
-                        <Menu x:Name="menu2" Background="#FFFFB7C5" Width="83" Margin="0,20,0,10" Height="45">
-                            <Menu.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <VirtualizingStackPanel Orientation="Vertical"/>
-                                </ItemsPanelTemplate>
-                            </Menu.ItemsPanel>
+                        <d3:Chart.Title>
+                            <TextBlock HorizontalAlignment="Center" FontSize="18" Margin="0,5,0,5">График продажи билетов по месяцам</TextBlock>
+                        </d3:Chart.Title>
+                        <d3:LineGraph x:Name="linegraph" />
 
-                            <MenuItem FontFamily="Franklin Gothic Medium" 
-       
-                                  MouseEnter="MenuItem_MouseEnter"
-                                  Width="Auto" Margin="10,-3,16,-27" FontSize="12" >
-                                <MenuItem.Background>
-                                    <ImageBrush ImageSource="/check2.png" Stretch="Uniform"/>
-                                </MenuItem.Background>
+                    </d3:Chart>
 
-                                <MenuItem x:Name="poseh" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Click="poseh_Click"  Header="Отчет по посещаемости мероприятий"/>
-                                <MenuItem HorizontalAlignment="Center" x:Name="prib" FontFamily="Franklin Gothic Medium" Click="prib_Click"  Header="Отчет по прибыли"/>
-                                <MenuItem HorizontalAlignment="Center" x:Name="biletpdf"  FontFamily="Franklin Gothic Medium"  Header="Билеты"/>
-
-                            </MenuItem>
-                        </Menu>
-                        <Button  Width="62" Height="68" BorderThickness="0" FontFamily="Franklin Gothic Medium"  Click="Button_Click_exit"  Margin="0,550,0,10" BorderBrush="#FFD5F3D8" Foreground="Black" Cursor="">
-                            <Button.Background>
-                                <ImageBrush ImageSource="/exit2.png" Stretch="UniformToFill"/>
-                            </Button.Background>
-                        </Button>
-                    </StackPanel>
-                </Border>
-
-                <Grid Margin="105,10,0,0" x:Name="canvas2" Visibility="Hidden">
-                    <Border Background="#D5F3D8" CornerRadius="50"  Margin="62,587,74,73">
+                    <Border x:Name="b1" Background="#FFFBFBFB" Margin="62,185,477,458"  CornerRadius="50">
                         <Border.Effect>
-                            <DropShadowEffect BlurRadius="80" Color="#FFC8C2C2" ShadowDepth="5" Direction="275"/>
-                        </Border.Effect>
-
-                        <d3:LineGraph x:Name="linegraph" Description="Simple linegraph" Stroke="Blue" StrokeThickness="3"/>
-
-                    </Border>
-
-
-                    <Border  Background="#D5F3D8" Margin="62,185,477,458"  CornerRadius="50">
-                        <Border.Effect>
-                            <DropShadowEffect BlurRadius="80" Color="#FFC8C2C2" ShadowDepth="20" Direction="275"/>
+                            <DropShadowEffect BlurRadius="80" Color="black" ShadowDepth="20" Direction="275"/>
                         </Border.Effect>
                         <Grid>
-                            <Image Source="C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\cat2.png" Margin="-1,-96,662,-9"    >
+                            <Image Source="C:\Users\Asus\Desktop\папки лл\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\cat.png" Margin="-40,-47,701,-33" >
                                 <Image.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
                                         <SkewTransform AngleX="0.539"/>
-                                        <RotateTransform Angle="0.11"/>
+                                        <RotateTransform Angle="-4.889"/>
                                         <TranslateTransform X="2.643" Y="0.005"/>
                                     </TransformGroup>
                                 </Image.RenderTransform>
@@ -107,12 +51,18 @@
 
                         </Grid>
                     </Border>
-                    <Border Background="#D5F3D8" Margin="1102,185,74,458" CornerRadius="50">
-                        <Border.Effect>
-                            <DropShadowEffect BlurRadius="80" Color="#FFC8C2C2" ShadowDepth="5" Direction="275"/>
-                        </Border.Effect>
 
-                    </Border>
+
+                    <d3:Chart x:Name="b4" Background="#FFFBFBFB"   Margin="1119,194,74,467">
+
+                        <d3:Chart.Title>
+                            <TextBlock HorizontalAlignment="Center" FontSize="18" Margin="0,5,0,5">График прибыли</TextBlock>
+                        </d3:Chart.Title>
+                        <d3:LineGraph x:Name="graph2" />
+
+                    </d3:Chart>
+
+
 
                 </Grid>
                 <Grid x:Name="canvas" Visibility="Hidden">
@@ -121,78 +71,109 @@
                         <RowDefinition Height="465*"/>
                     </Grid.RowDefinitions>
                     <DataGrid x:Name="datagrid"  SelectionChanged="datagrid_SelectionChanged" FontSize="15" d:ItemsSource="{d:SampleData ItemCount=30}" AutoGenerateColumns="True" Margin="158,186,480,46" Grid.RowSpan="2"/>
-                    <Border Visibility="Hidden" x:Name="ticketsb" Margin="1241,186,55,46" Background="#FFFFE7E7" Grid.RowSpan="2" CornerRadius="50">
+                    <Border Visibility="Hidden" x:Name="ticketsb" Margin="1241,186,55,46" Background="#e3e3e3" Grid.RowSpan="2" CornerRadius="50">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="80" Color="#565656" ShadowDepth="20" Direction="275"/>
+                        </Border.Effect>
                         <StackPanel>
-                            <TextBox materialDesign:HintAssist.Hint="Номер билета" x:Name="numTic"  Margin="20" Height="35"  BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Детали билета" x:Name="detailtic"  Margin="20" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Id концерт" x:Name="idconserttic"  Margin="20" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Id тип билета" x:Name="idtypetictick"  Margin="20" Height="35"   BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Id сотрудник" x:Name="idsotrtick"  Margin="20" Height="35"  BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" Cursor="" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <Button x:Name="ticketbut" Click="ticketbut_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" Margin="20" FontFamily="Franklin Gothic Medium" Width="258" FontSize="20">Добавить</Button>
-                            <Button x:Name="ticketupdate" Click="ticketupdate_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" Margin="20" FontFamily="Franklin Gothic Medium" Width="258" FontSize="20">Изменить</Button>
-                            <Button x:Name="ticketdelete" Click="ticketdelete_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" Margin="20" FontFamily="Franklin Gothic Medium" Width="258" FontSize="20">Удалить</Button>
+                            <TextBox materialDesign:HintAssist.Hint="Номер билета" x:Name="numTic"  Margin="20" Height="35"  BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#FFE0E0E0" Cursor=""></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Детали билета" x:Name="detailtic"  Margin="20" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#FFE0E0E0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Id концерт" x:Name="idconserttic"  Margin="20" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#FFE0E0E0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Id тип билета" x:Name="idtypetictick"  Margin="20" Height="35"   BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#FFE0E0E0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Id сотрудник" x:Name="idsotrtick"  Margin="20" Height="35"  BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" Cursor="" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#FFE0E0E0"></TextBox>
+                            <Button x:Name="ticketbut" Click="ticketbut_Click" Background="#565656" BorderBrush="#565656" Margin="20" FontFamily="Franklin Gothic Medium" Width="258" Foreground="#e0e0e0" FontSize="20">Добавить</Button>
+                            <Button x:Name="ticketupdate" Click="ticketupdate_Click" Background="#565656" BorderBrush="#565656" Margin="20" FontFamily="Franklin Gothic Medium" Width="258" Foreground="#e0e0e0" FontSize="20">Изменить</Button>
+                            <Button x:Name="ticketdelete" Click="ticketdelete_Click" Background="#565656" BorderBrush="#565656" Margin="20" FontFamily="Franklin Gothic Medium" Width="258" Foreground="#e0e0e0" FontSize="20">Удалить</Button>
                         </StackPanel>
                     </Border>
-                    <Border x:Name="consertsb" Visibility="Hidden" Margin="1241,186,55,46" Background="#FFFFE7E7" Grid.RowSpan="2" CornerRadius="50">
+                    <Border x:Name="consertsb" Visibility="Hidden" Margin="1241,186,55,46" Background="#e3e3e3" Grid.RowSpan="2" CornerRadius="50">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="80" Color="#565656" ShadowDepth="20" Direction="275"/>
+                        </Border.Effect>
                         <StackPanel>
-                            <TextBox materialDesign:HintAssist.Hint="Id концерт" x:Name="idconser" Margin="20" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <DatePicker x:Name="timeconsert" Background="#FFD5F3D8" Margin="15"  VerticalAlignment="Top" Height="35" FontFamily="Franklin Gothic Medium" FontSize="18" Foreground="Black" />
-                            <TextBox materialDesign:HintAssist.Hint="Время" x:Name="time" Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Артист" x:Name="artist" Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Адрес" x:Name="adress" Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Тип" x:Name="typecon" Margin="15" Height="35"  BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Место" x:Name="place" Margin="15" Height="35"  BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <Button x:Name="consertadd" Click="consertadd_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" Margin="20" Width="258"  FontFamily="Franklin Gothic Medium" FontSize="20">Добавить</Button>
-                            <Button x:Name="updateconc" Click="updateconc_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" Margin="20" Width="258"  FontFamily="Franklin Gothic Medium" FontSize="20">Изменить</Button>
-                            <Button x:Name="deleteconc" Click="deleteconc_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" Margin="20" Width="258"  FontFamily="Franklin Gothic Medium" FontSize="20">Удалить</Button>
+                            <TextBox materialDesign:HintAssist.Hint="Id концерт" x:Name="idconser" Margin="20" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" Foreground="#e0e0e0" SelectionBrush="#e0e0e0"></TextBox>
+                            <DatePicker x:Name="timeconsert" Background="#565656" Margin="15"  VerticalAlignment="Top" Height="35" FontFamily="Franklin Gothic Medium" FontSize="18" Foreground="#e0e0e0" />
+                            <TextBox materialDesign:HintAssist.Hint="Время" x:Name="time" Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Артист" x:Name="artist" Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Адрес" x:Name="adress" Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Тип" x:Name="typecon" Margin="15" Height="35"  BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Место" x:Name="place" Margin="15" Height="35"  BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <Button x:Name="consertadd" Click="consertadd_Click" Background="#565656" BorderBrush="#565656" Margin="20" Width="258"  FontFamily="Franklin Gothic Medium" Foreground="#e0e0e0" FontSize="20">Добавить</Button>
+                            <Button x:Name="updateconc" Click="updateconc_Click" Background="#565656" BorderBrush="#565656" Margin="20" Width="258"  FontFamily="Franklin Gothic Medium" Foreground="#e0e0e0" FontSize="20">Изменить</Button>
+                            <Button x:Name="deleteconc" Click="deleteconc_Click" Background="#565656" BorderBrush="#565656" Margin="20" Width="258"  FontFamily="Franklin Gothic Medium" Foreground="#e0e0e0" FontSize="20">Удалить</Button>
                         </StackPanel>
                     </Border>
 
-                    <Border x:Name="sotrudB" Visibility="Hidden" Margin="1241,186,55,46" Background="#FFFFE7E7" Grid.RowSpan="2" CornerRadius="50">
+                    <Border x:Name="sotrudB" Visibility="Hidden" Margin="1241,186,55,46" Background="#e3e3e3" Grid.RowSpan="2" CornerRadius="50">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="80" Color="#565656" ShadowDepth="20" Direction="275"/>
+                        </Border.Effect>
                         <StackPanel>
-                            <TextBox materialDesign:HintAssist.Hint="Id сотрудника" x:Name="idsotr" Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" Width="255" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Id сотрудника" x:Name="idsotr" Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
 
-                            <TextBox materialDesign:HintAssist.Hint="Логин" x:Name="login" Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" Width="255" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Пароль" x:Name="passwordsotr" Margin="15" Height="35"   BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" Width="256" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Фамилия" x:Name="fdmilia" Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" Width="256" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Имя" x:Name="name" Margin="15"  BorderBrush="#FFFFB7C5" Height="35" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" Width="256" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Отчество" x:Name="otchest" Margin="15" Height="35"   BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" Width="258" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Id должность" x:Name="iddoljsotr" Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" Width="258" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <Button x:Name="addsotr" Click="addsotr_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" Margin="20"  FontSize="20" Width="258" >Добавить</Button>
-                            <Button x:Name="updatesotr" Click="updatesotr_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" Margin="20"  FontSize="20" Width="258">Изменить</Button>
-                            <Button x:Name="deletesotr" Click="deletesotr_Click" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" Margin="20"  FontSize="20" Width="259">Удалить</Button>
+                            <TextBox materialDesign:HintAssist.Hint="Логин" x:Name="login" Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Пароль" x:Name="passwordsotr" Margin="15" Height="35"  BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Фамилия" x:Name="fdmilia" Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Имя" x:Name="name" Margin="15"  Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Отчество" x:Name="otchest" Margin="15" Height="35"  BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Id должность" x:Name="iddoljsotr" Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <Button x:Name="addsotr" Click="addsotr_Click" Background="#565656" BorderBrush="#565656" Margin="20" FontFamily="Franklin Gothic Medium" Width="258" Foreground="#e0e0e0"  FontSize="20" >Добавить</Button>
+                            <Button x:Name="updatesotr" Click="updatesotr_Click" Background="#565656" BorderBrush="#565656" Margin="20" FontFamily="Franklin Gothic Medium" Width="258" Foreground="#e0e0e0"  FontSize="20" >Изменить</Button>
+                            <Button x:Name="deletesotr" Click="deletesotr_Click" Background="#565656" BorderBrush="#565656" Margin="20" FontFamily="Franklin Gothic Medium" Foreground="#e0e0e0"  FontSize="20" Width="259">Удалить</Button>
                         </StackPanel>
                     </Border>
-                    <Border x:Name="doljd" Visibility="Hidden"  Margin="1241,186,55,46" Background="#FFFFE7E7" Grid.RowSpan="2" CornerRadius="50">
+                    <Border x:Name="doljd" Visibility="Hidden"  Margin="1241,186,55,46" Background="#e3e3e3" Grid.RowSpan="2" CornerRadius="50">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="80" Color="#565656" ShadowDepth="20" Direction="275"/>
+                        </Border.Effect>
                         <StackPanel>
-                            <TextBox materialDesign:HintAssist.Hint="Id должность" x:Name="iddolg" Margin="15,50,15,0" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Id должность" x:Name="iddolg" Margin="15,50,15,0" Height="35"  BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
 
-                            <TextBox materialDesign:HintAssist.Hint="Название должности" x:Name="namedolj"  Margin="15,50,15,0" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Название должности" x:Name="namedolj"  Margin="15,50,15,0" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
 
-                            <Button x:Name="dolgadd" Click="dolgadd_Click" Margin="15,50,15,0" Width="258"  Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" FontSize="20" >Добавить</Button>
-                            <Button x:Name="dolgupd" Click="dolgupd_Click" Margin="15,50,15,0" Width="258"  Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" FontSize="20">Изменить</Button>
-                            <Button x:Name="dolgdel" Click="dolgdel_Click" Margin="15,50,15,0" Width="258"  Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" FontSize="20">Удалить</Button>
+                            <Button x:Name="dolgadd" Click="dolgadd_Click" Margin="15,50,15,0" Width="258"  Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20">Добавить</Button>
+                            <Button x:Name="dolgupd" Click="dolgupd_Click" Margin="15,50,15,0" Width="258"  Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20">Изменить</Button>
+                            <Button x:Name="dolgdel" Click="dolgdel_Click" Margin="15,50,15,0" Width="258"  Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20">Удалить</Button>
                         </StackPanel>
 
                     </Border>
-                    <Border x:Name="typeoftic" Visibility="Hidden" Margin="1241,186,55,46" Background="#FFFFE7E7" Grid.RowSpan="2" CornerRadius="50">
+                    <Border x:Name="typeoftic" Visibility="Hidden" Margin="1241,186,55,46" Background="#e3e3e3" Grid.RowSpan="2" CornerRadius="50">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="80" Color="#565656" ShadowDepth="20" Direction="275"/>
+                        </Border.Effect>
                         <StackPanel>
-                            <TextBox materialDesign:HintAssist.Hint="Id типа билета" x:Name="idtypeoftic"  Margin="15,30,20,15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Id типа билета" x:Name="idtypeoftic"  Margin="15,30,20,15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
 
-                            <TextBox materialDesign:HintAssist.Hint="Название типа билета" x:Name="nametypetic"   Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Цена" x:Name="cost"    Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
-                            <TextBox materialDesign:HintAssist.Hint="Количество" x:Name="quanity"  Margin="15" Height="35" BorderBrush="#FFFFB7C5" Background="#FFD5F3D8" FontFamily="Franklin Gothic Medium" CaretBrush="#FFFFB7C5" SelectionBrush="#FFFFB7C5"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Название типа билета" x:Name="nametypetic"   Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
 
-                            <Button x:Name="addtypetic" Click="addtypetic_Click" Margin="20"   Width="259" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" FontSize="20" >Добавить</Button>
-                            <Button x:Name="updatetictype" Click="updatetictype_Click" Margin="20"  Width="259" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" FontSize="20">Изменить</Button>
-                            <Button  Margin="20" x:Name="deletetypetic" Click="deletetypetic_Click"   Width="259" Background="#FFFFB7C5" BorderBrush="#FFFFB7C5" FontFamily="Franklin Gothic Medium" FontSize="20">Удалить</Button>
+
+                            <Button x:Name="addtypetic" Click="addtypetic_Click" Margin="20"   Width="259" Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20" >Добавить</Button>
+                            <Button x:Name="updatetictype" Click="updatetictype_Click" Margin="20"  Width="259" Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20">Изменить</Button>
+                            <Button  Margin="20" x:Name="deletetypetic" Click="deletetypetic_Click"   Width="259" Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20">Удалить</Button>
+                        </StackPanel>
+                    </Border>
+                    <Border x:Name="lol" Visibility="Hidden" Margin="1241,186,55,46" Background="#e3e3e3" Grid.RowSpan="2" CornerRadius="50">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="80" Color="#565656" ShadowDepth="20" Direction="275"/>
+                        </Border.Effect>
+                        <StackPanel>
+                            <TextBox materialDesign:HintAssist.Hint="Id типа билета" x:Name="lol2"  Margin="15,30,20,15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+
+                            <TextBox materialDesign:HintAssist.Hint="Id концерт" x:Name="lol3"   Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+
+                            <TextBox materialDesign:HintAssist.Hint="Id Тип билета" x:Name="lol4"   Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Количество" x:Name="lol5"   Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <TextBox materialDesign:HintAssist.Hint="Цена" x:Name="lol6"   Margin="15" Height="35" BorderBrush="#565656" Background="#565656" FontFamily="Franklin Gothic Medium" CaretBrush="#e0e0e0" SelectionBrush="#e0e0e0" Foreground="#e0e0e0"></TextBox>
+                            <Button x:Name="addticcobc" Click="addticcobc_Click" Margin="20"   Width="259" Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20" >Добавить</Button>
+                            <Button x:Name="upticconc" Click="upticconc_Click" Margin="20"  Width="259" Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20">Изменить</Button>
+                            <Button  Margin="20" x:Name="deleteticcocn" Click="deleteticcocn_Click"  Width="259" Background="#565656" BorderBrush="#565656"  FontFamily="Franklin Gothic Medium"  Foreground="#e0e0e0"  FontSize="20">Удалить</Button>
                         </StackPanel>
                     </Border>
 
                 </Grid>
 
-                <Grid Margin="110,0,0,0" x:Name="canvas3" Visibility="Visible" Height="993" VerticalAlignment="Bottom">
-                    <Menu x:Name="men2u" Background="#FFFFB7C5" Margin="50,184,1305,764" Height="45" >
+                <Grid Margin="110,0,0,0" x:Name="canvas3" Visibility="Hidden" Height="993" VerticalAlignment="Bottom">
+                    <Menu x:Name="men2u" Background="Black" Foreground="white"  Margin="50,184,1305,764" Height="45" >
                         <Menu.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <VirtualizingStackPanel Orientation="Vertical"/>
@@ -205,24 +186,76 @@
                          Width="Auto" Margin="1,0,-17,0" FontSize="18" RenderTransformOrigin="0.307,0.529" >
 
 
-                            <MenuItem  HorizontalAlignment="Center" x:Name="posofmonth" FontFamily="Franklin Gothic Medium"  Header="За месяц"/>
-                            <MenuItem HorizontalAlignment="Center" x:Name="posofkvart"  FontFamily="Franklin Gothic Medium"  Header="За квартал"/>
-                            <MenuItem HorizontalAlignment="Center" x:Name="posofyear" FontFamily="Franklin Gothic Medium"  Header="За год"/>
+                            <MenuItem  HorizontalAlignment="Center" x:Name="posofmonth" FontFamily="Franklin Gothic Medium" Click="posofmonth_Click" Header="За месяц"/>
+                            <MenuItem HorizontalAlignment="Center" x:Name="posofkvart"  FontFamily="Franklin Gothic Medium" Click="posofkvart_Click" Header="За квартал"/>
+                            <MenuItem HorizontalAlignment="Center" x:Name="posofyear" FontFamily="Franklin Gothic Medium" Click="posofyear_Click" Header="За год"/>
 
 
                         </MenuItem>
                     </Menu>
-                    <DataGrid x:Name="datagrid2"  FontSize="40" d:ItemsSource="{d:SampleData ItemCount=30}" AutoGenerateColumns="True" Margin="136,434,154,80"/>
-                    <Canvas x:Name="monthes" Margin="10,234,154,600">
-                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="39" Canvas.Left="102" Canvas.Top="62" HorizontalAlignment="Center" VerticalAlignment="Top">С</Label>
-                        <DatePicker x:Name="datefirstpos" Background="#FFD5F3D8" Height="63" FontFamily="Franklin Gothic Medium" FontSize="18" Foreground="Black" Canvas.Left="194" Canvas.Top="54" HorizontalAlignment="Left" Width="229" VerticalAlignment="Top" />
-                        <DatePicker x:Name="datelastpos" Background="#FFD5F3D8" Height="63" FontFamily="Franklin Gothic Medium" FontSize="18" Foreground="Black" Canvas.Left="610" Canvas.Top="54" HorizontalAlignment="Left" Width="230" VerticalAlignment="Top" />
-                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="39" Canvas.Left="504" Canvas.Top="62">по</Label>
-                        <Button Canvas.Left="996" Background="#FFD5F3D8"  FontSize="20" Canvas.Top="54" Height="63" Width="251" BorderBrush="#FFF6B9DD" x:Name="otchetdatapost" Click="otchetdatapost_Click" Foreground="Black">Сформировать отчет</Button>
+                    <Button Foreground="Black" Canvas.Left="922" Background="#FFB3B3B3"  FontSize="20" Canvas.Top="58" Height="64" Width="251" BorderBrush="#FFB3B3B3" Click="OtchetExcel2" Margin="1228,288,47,641" RenderTransformOrigin="0.5,0.5">
+                        Отчет в Exel
+                    </Button>
+                    <DataGrid x:Name="datagrid2"  FontSize="20" d:ItemsSource="{d:SampleData ItemCount=30}" AutoGenerateColumns="True" Margin="136,434,154,80"/>
+                    <Canvas x:Name="monthes" Visibility="Hidden" Margin="10,234,154,600">
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="111" Canvas.Left="30" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Месяц&#xD;&#xA;"/>
+                        <ComboBox x:Name="monthcomn" FontSize="20px" Canvas.Left="206" Canvas.Top="67" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" VerticalAlignment="Top" Foreground="black">
+                            <ComboBoxItem Content="1"/>
+                            <ComboBoxItem Content="2"/>
+                            <ComboBoxItem Content="3"/>
+                            <ComboBoxItem Content="4"/>
+                            <ComboBoxItem Content="5"/>
+                            <ComboBoxItem Content="6"/>
+                            <ComboBoxItem Content="7"/>
+                            <ComboBoxItem Content="8"/>
+                            <ComboBoxItem Content="9"/>
+                            <ComboBoxItem Content="10"/>
+                            <ComboBoxItem Content="11"/>
+                            <ComboBoxItem Content="12"/>
+
+                        </ComboBox>
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="111" Canvas.Left="426" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Год"/>
+                        <ComboBox x:Name="comyear" FontSize="20px" Canvas.Left="531" Canvas.Top="67" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" Foreground="Black">
+                            <ComboBoxItem Content="2025"/>
+                            <ComboBoxItem Content="2026"/>
+
+
+                        </ComboBox>
+                        <Button Canvas.Left="766" Background="#FFB3B3B3"  FontSize="20" Canvas.Top="57" Height="63" Width="251" BorderBrush="#FFB3B3B3" x:Name="otchetdatapost" Click="otchetdatapost_Click" Foreground="Black">Сформировать отчет</Button>
+                    </Canvas>
+                    <Canvas x:Name="years" Visibility="Hidden" Margin="10,234,154,600">
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="111" Canvas.Left="109" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Год"/>
+                        <ComboBox x:Name="yeaars" FontSize="20px" Canvas.Left="225" Canvas.Top="69" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" VerticalAlignment="Top" Foreground="Black">
+                            <ComboBoxItem Content="2025"/>
+                            <ComboBoxItem Content="2026"/>
+
+
+                        </ComboBox>
+                        <Button Canvas.Left="461" Background="#FFB3B3B3"  FontSize="20" Canvas.Top="54" Height="64" Width="251" BorderBrush="#FFB3B3B3" x:Name="otchetyearpos" Click="otchetyearpos_Click" Foreground="Black">Сформировать отчет</Button>
+                    </Canvas>
+                    <Canvas x:Name="quarter" Margin="10,234,154,600">
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="140" Canvas.Left="80" Canvas.Top="69" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Квартал"/>
+                        <ComboBox x:Name="quarters" FontSize="20px" Canvas.Left="225" Canvas.Top="69" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" VerticalAlignment="Top">
+                            <ComboBoxItem Content="1"/>
+                            <ComboBoxItem Content="2"/>
+                            <ComboBoxItem Content="3"/>
+                            <ComboBoxItem Content="4"/>
+
+
+
+                        </ComboBox>
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="111" Canvas.Left="428" Canvas.Top="69" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Год"/>
+                        <ComboBox x:Name="yeaarss" FontSize="20px" Canvas.Left="566" Canvas.Top="67" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" VerticalAlignment="Top">
+                            <ComboBoxItem Content="2025"/>
+                            <ComboBoxItem Content="2026"/>
+
+
+                        </ComboBox>
+                        <Button Canvas.Left="922" Background="#FFB3B3B3"  FontSize="20" Canvas.Top="58" Height="64" Width="251" BorderBrush="#FFB3B3B3" x:Name="otchetquarter" Click="otchetquarter_Click" Foreground="Black">Сформировать отчет</Button>
                     </Canvas>
                 </Grid>
                 <Grid Margin="110,0,0,0" x:Name="canvas4" Visibility="Hidden" Height="993" VerticalAlignment="Bottom">
-                    <Menu x:Name="men3u" Background="#FFFFB7C5" Margin="50,184,1305,764" Height="45" >
+                    <Menu x:Name="men3u" Background="Black" Foreground="#c8d1d8"  Margin="50,184,1305,764" Height="45" >
                         <Menu.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <VirtualizingStackPanel Orientation="Vertical"/>
@@ -235,20 +268,201 @@
                          Width="Auto" Margin="1,0,-17,0" FontSize="18" RenderTransformOrigin="0.307,0.529" >
 
 
-                            <MenuItem  HorizontalAlignment="Center"  FontFamily="Franklin Gothic Medium"  Header="За месяц"/>
-                            <MenuItem HorizontalAlignment="Center"   FontFamily="Franklin Gothic Medium"  Header="За квартал"/>
-                            <MenuItem HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium"  Header="За год"/>
+                            <MenuItem  HorizontalAlignment="Center" x:Name="monthCost" Click="monthCost_Click" FontFamily="Franklin Gothic Medium"  Header="За месяц"/>
+                            <MenuItem HorizontalAlignment="Center"   x:Name="quarterCost" Click="quarterCost_Click"  FontFamily="Franklin Gothic Medium"  Header="За квартал"/>
+                            <MenuItem HorizontalAlignment="Center"  x:Name="yearCost" Click="yearCost_Click" FontFamily="Franklin Gothic Medium"  Header="За год"/>
 
 
                         </MenuItem>
                     </Menu>
+                    <Button Foreground="Black" Canvas.Left="922" Background="#FFB3B3B3"  FontSize="20" Canvas.Top="58" Height="64" Width="251" BorderBrush="#FFB3B3B3" Click="OtchetExcel1" Margin="1228,288,47,641" RenderTransformOrigin="0.5,0.5">
+                        Отчет в Exel
+                    </Button>
+                    <DataGrid x:Name="datagrid3"  FontSize="20" d:ItemsSource="{d:SampleData ItemCount=30}" AutoGenerateColumns="True" Margin="136,434,154,80"/>
+                    <Canvas x:Name="quarterC" Margin="10,234,154,600">
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="140" Canvas.Left="80" Canvas.Top="69" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Квартал"/>
+                        <ComboBox x:Name="quartersC" FontSize="20px" Canvas.Left="225" Canvas.Top="69" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" VerticalAlignment="Top" Foreground="Black">
+                            <ComboBoxItem Content="1"/>
+                            <ComboBoxItem Content="2"/>
+                            <ComboBoxItem Content="3"/>
+                            <ComboBoxItem Content="4"/>
 
 
+
+                        </ComboBox>
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="111" Canvas.Left="428" Canvas.Top="69" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Год"/>
+                        <ComboBox x:Name="yeaarssC" FontSize="20px" Canvas.Left="566" Canvas.Top="67" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3"  VerticalAlignment="Top" Foreground="Black">
+                            <ComboBoxItem Content="2025"/>
+                            <ComboBoxItem Content="2026"/>
+
+
+                        </ComboBox>
+                        <Button Canvas.Left="922" Background="#FFB3B3B3"  FontSize="20" Canvas.Top="58" Height="64" Width="251" BorderBrush="#FFB3B3B3" x:Name="otchetquarterC" Click="otchetquarterC_Click" Foreground="Black">Сформировать отчет</Button>
+                    </Canvas>
+                    <Canvas x:Name="yearsC" Visibility="Hidden" Margin="10,234,154,600">
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="111" Canvas.Left="109" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Год"/>
+                        <ComboBox x:Name="yeaarsC" FontSize="20px" Canvas.Left="225" Canvas.Top="69" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" Foreground="Black" VerticalAlignment="Top">
+                            <ComboBoxItem Content="2025"/>
+                            <ComboBoxItem Content="2026"/>
+
+
+                        </ComboBox>
+                        <Button Canvas.Left="461" Background="#FFBDBDBD"  FontSize="20" Canvas.Top="54" Height="64" Width="251" BorderBrush="#c8d1d8" x:Name="otchetyearposC" Click="otchetyearposC_Click" Foreground="Black">Сформировать отчет</Button>
+                    </Canvas>
+                    <Canvas x:Name="monthesC" Visibility="Hidden" Margin="10,234,154,600">
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="111" Canvas.Left="30" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Месяц&#xD;&#xA;"/>
+                        <ComboBox x:Name="monthcomnC" FontSize="20px" Canvas.Left="206" Canvas.Top="67" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" Foreground="Black" VerticalAlignment="Top">
+                            <ComboBoxItem Content="1"/>
+                            <ComboBoxItem Content="2"/>
+                            <ComboBoxItem Content="3"/>
+                            <ComboBoxItem Content="4"/>
+                            <ComboBoxItem Content="5"/>
+                            <ComboBoxItem Content="6"/>
+                            <ComboBoxItem Content="7"/>
+                            <ComboBoxItem Content="8"/>
+                            <ComboBoxItem Content="9"/>
+                            <ComboBoxItem Content="10"/>
+                            <ComboBoxItem Content="11"/>
+                            <ComboBoxItem Content="12"/>
+
+                        </ComboBox>
+                        <Label FontFamily="Franklin Gothic Medium" FontSize="30" Height="48" Width="111" Canvas.Left="426" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Год"/>
+                        <ComboBox x:Name="comyearC" FontSize="20px" Canvas.Left="531" Canvas.Top="67" HorizontalAlignment="Left" Height="43" Width="150" Background="#FFB3B3B3" Foreground="Black">
+                            <ComboBoxItem Content="2025"/>
+                            <ComboBoxItem Content="2026"/>
+
+
+                        </ComboBox>
+                        <Button Canvas.Left="766" Background="Black"  FontSize="20" Canvas.Top="57" Height="63" Width="251" BorderBrush="black" x:Name="otchetdatapostC" Click="otchetdatapostC_Click" Foreground="White">Сформировать отчет</Button>
+                    </Canvas>
 
                 </Grid>
-                <Label x:Name="nameofus" Content="Пользователь" FontFamily="Franklin Gothic Medium" FontSize="24" Margin="1092,76,0,0" HorizontalAlignment="Left" Width="534" Height="54" VerticalAlignment="Top"/>
-                <Image Source="C:\Users\Asus\Desktop\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\bin\Debug\caticon.png" Margin="1411,45,6,796"></Image>
+                <Grid x:Name="canvas5" Visibility="Hidden">
+                    <ComboBox x:Name="ticclick" Background="#FFB3B3B3" Foreground="Black" Height="41" Margin="1215,370,195,0" VerticalAlignment="Top"></ComboBox>
+                    <Button x:Name="tic" Background="Black"  Foreground="White"  Click="tic_Click" Margin="1154,431,134,477" RenderTransformOrigin="0.5,0.5" BorderBrush="Black">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform> Вывести билет и скачать
+                    </Button>
+                    <FlowDocumentReader x:Name="DocViewer" Margin="215,93,721,10" Width="700" Height="900">
+                        <FlowDocument>
+                            <FlowDocument.Resources>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FontSize" Value="14"/>
+                                    <Setter Property="Margin" Value="5"/>
+                                </Style>
+                            </FlowDocument.Resources>
+                            <BlockUIContainer>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+
+
+                                </Grid>
+                            </BlockUIContainer>
+                        </FlowDocument>
+                    </FlowDocumentReader>
+                </Grid>
+                <Label x:Name="nameofus" Content="Пользователь" FontFamily="Franklin Gothic Medium" FontSize="24" Margin="1102,0,0,0" HorizontalAlignment="Left" Width="534" Height="54" VerticalAlignment="Top"/>
+                <Image Source="C:\Users\Asus\Desktop\папки лл\учеба\курсач\TicketCassa0fConsertPlace\TicketCassa0fConsertPlace\icon.png" Margin="1416,-33,1,874"></Image>
             </Grid>
+        </Border>
+
+        <Border x:Name="b" Background="#e0e0e0"   HorizontalAlignment="Left" Width="165">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="80" Color="Black" ShadowDepth="20" Direction="275"/>
+            </Border.Effect>
+            <StackPanel Margin="10">
+                <Button  Width="72" Height="88" BorderThickness="0" FontFamily="Franklin Gothic Medium"  Click="mainw_Click" Margin="0,80,0,10" Foreground="Black">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Без названия77_20260509171825.png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                    <Button.ToolTip >
+                        <ToolTip Placement="Mouse" HorizontalOffset="2" VerticalOffset="6">Главная страница</ToolTip>
+                    </Button.ToolTip>
+                </Button>
+
+                <Menu x:Name="menu" Background="#e0e0e0" Foreground="black" Width="89" Margin="0,10,0,10" Height="87">
+                    <Menu.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel Orientation="Vertical"/>
+                        </ItemsPanelTemplate>
+                    </Menu.ItemsPanel>
+
+                    <MenuItem FontFamily="Franklin Gothic Medium" 
+              
+             MouseEnter="MenuItem_MouseEnter"
+             Width="Auto" Margin="10,-3,14,-64" FontSize="12" >
+                        <MenuItem.ToolTip>
+                            <ToolTip Placement="Right" >
+                                Справочники
+                            </ToolTip>
+                        </MenuItem.ToolTip>
+                        <MenuItem.Background>
+                            <ImageBrush ImageSource="/Без названия77_20260509171859.png" Stretch="UniformToFill"/>
+                        </MenuItem.Background>
+
+                        <MenuItem x:Name="tickets" HorizontalAlignment="Center" Click="tickets_Click" FontFamily="Franklin Gothic Medium"  Header="Билеты"/>
+                        <MenuItem HorizontalAlignment="Center" x:Name="conserts" Click="concerts_Click" FontFamily="Franklin Gothic Medium"  Header="Концерты"/>
+                        <MenuItem HorizontalAlignment="Center" x:Name="typetic" Click="typetic_Click" FontFamily="Franklin Gothic Medium"  Header="Виды Билетов"/>
+                        <MenuItem HorizontalAlignment="Center" x:Name="sotr" Click="sotr_Click" FontFamily="Franklin Gothic Medium"  Header="Сотрудники"/>
+                        <MenuItem HorizontalAlignment="Center" x:Name="dolj" Click="dolj_Click" FontFamily="Franklin Gothic Medium"  Header="Должности"/>
+                        <MenuItem HorizontalAlignment="Center" x:Name="lolvo" Click="lolvo_Click" FontFamily="Franklin Gothic Medium"  Header="Количество билетов"/>
+
+
+                    </MenuItem>
+                </Menu>
+                <Menu x:Name="menu2" Background="#e0e0e0" Foreground="Black"  Width="83" Margin="0,30,0,10" Height="45">
+                    <Menu.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel Orientation="Vertical"/>
+                        </ItemsPanelTemplate>
+                    </Menu.ItemsPanel>
+
+                    <MenuItem FontFamily="Franklin Gothic Medium" 
+       
+                  MouseEnter="MenuItem_MouseEnter"
+                  Width="Auto" Margin="-14,-45,-5,-59" FontSize="12" >
+                        <MenuItem.ToolTip>
+                            <ToolTip Placement="Right" >
+                                Отчёт
+                            </ToolTip>
+                        </MenuItem.ToolTip>
+                        <MenuItem.Background>
+                            <ImageBrush ImageSource="/Без названия77_20260509171738.png" Stretch="UniformToFill"/>
+                        </MenuItem.Background>
+
+                        <MenuItem x:Name="poseh" HorizontalAlignment="Center" FontFamily="Franklin Gothic Medium" Click="poseh_Click"  Header="Отчет по посещаемости мероприятий"/>
+                        <MenuItem HorizontalAlignment="Center" x:Name="prib" FontFamily="Franklin Gothic Medium" Click="prib_Click"  Header="Отчет по прибыли"/>
+                        <MenuItem HorizontalAlignment="Center" x:Name="biletpdf"  FontFamily="Franklin Gothic Medium"  Header="Билеты" Click="biletpdf_Click"/>
+                        
+                    </MenuItem>
+                </Menu>
+                <Button  Width="62" Height="68" BorderThickness="0" FontFamily="Franklin Gothic Medium" Click="Button_Click_1" Margin="0,440,0,10" BorderBrush="#FFD5F3D8" Foreground="Black" Cursor="">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/9e82acb4d1b1820a2ee2a1d0f510158f.png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                    <Button.ToolTip >
+                        <ToolTip Placement="Mouse" HorizontalOffset="2" VerticalOffset="6">Справочная информация</ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button  Width="62" Height="68" BorderThickness="0" FontFamily="Franklin Gothic Medium"  Click="Button_Click_exit"  Margin="0,25,0,10" BorderBrush="#FFD5F3D8" Foreground="Black" Cursor="">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Без названия77_20260509171655.png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                    <Button.ToolTip >
+                        <ToolTip Placement="Mouse" HorizontalOffset="2" VerticalOffset="6">Выход</ToolTip>
+                    </Button.ToolTip>
+                </Button>
+            </StackPanel>
         </Border>
 
 

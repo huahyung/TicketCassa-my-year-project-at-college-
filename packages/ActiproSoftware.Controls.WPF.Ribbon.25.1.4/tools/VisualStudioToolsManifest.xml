@@ -1,0 +1,34 @@
+<FileList>
+	<File Reference="ActiproSoftware.Ribbon.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Ribbon (for WPF)" BlendCategory="Actipro Ribbon (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Ribbon" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.BackstageTab" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.Button" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.ButtonGroup" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.CheckBox" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.ColorPickerGallery" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.ComboBox" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.ContextMenu" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.FontFamilyComboBox" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.FontSizeComboBox" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.Group" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.Menu" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.MiniToolBar" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.PopupButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.PopupGallery" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.RadioButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.RecentDocumentMenu" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.RibbonGallery" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.RowPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.Separator" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.SplitButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.StackPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.TaskTabControl" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.TaskTabItem" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.TextBox" />
+			<Item Type="ActiproSoftware.Windows.Controls.Ribbon.Controls.ToggleMinimizationButton" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

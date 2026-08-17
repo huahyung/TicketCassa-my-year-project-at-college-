@@ -1,0 +1,29 @@
+<FileList>
+	<File Reference="ActiproSoftware.Bars.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Bars (for WPF)" BlendCategory="Actipro Bars (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarCheckBox" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarComboBox" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarContextMenu" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarMainMenu" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarPopupButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarSeparator" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarSplitButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarSplitToggleButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarTextBox" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.BarToggleButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.DockableToolBar" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.DockableToolBarHost" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.RecentDocumentControl" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.Ribbon" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.RibbonBackstage" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.RibbonContainerPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.RibbonControlGroup" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.RibbonGallery" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.StandaloneToolBar" />
+			<Item Type="ActiproSoftware.Windows.Controls.Bars.TaskTabControl" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

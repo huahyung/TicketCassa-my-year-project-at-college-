@@ -1,0 +1,11 @@
+<FileList>
+	<File Reference="ActiproSoftware.Charts.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Charts (for WPF)" BlendCategory="Actipro Charts (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.Charts.DonutChart" />
+			<Item Type="ActiproSoftware.Windows.Controls.Charts.PieChart" />
+			<Item Type="ActiproSoftware.Windows.Controls.Charts.XYChart" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

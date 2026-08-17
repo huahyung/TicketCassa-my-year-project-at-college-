@@ -7,11 +7,17 @@
         xmlns:local="clr-namespace:TicketCassa0fConsertPlace"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Авторизация" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" Background="#eff6ff">
+        Title="Авторизация" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/70e61dbbd9f6adc94c501788cf59918d.jpg" Stretch="Uniform"/>
+        </Grid.Background>
         <Border MinWidth="400" Margin="15" Background="#ffffff" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
             <Border.Effect>
-                <DropShadowEffect BlurRadius="30" Color="#48036F" ShadowDepth="10"/>
+                <DropShadowEffect BlurRadius="70" Color="Black" ShadowDepth="20"/>
 
             </Border.Effect>
             <StackPanel Height="264" Margin="-20,0,-20,0">
@@ -20,7 +26,7 @@
 
                 <TextBox  x:Name="loginn" materialDesign:HintAssist.Hint="Введите логин" Grid.Row="2" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="48" ></TextBox>
                 <PasswordBox x:Name="passwordd" materialDesign:HintAssist.Hint="Введите пароль"  Grid.Row="3" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" ></PasswordBox>
-                <Button Click="Button_Click" HorizontalAlignment="Center" Grid.Row="5" Margin="0 20 0 0" Width="500" Content="Войти"/>
+                <Button Click="Button_Click" HorizontalAlignment="Center" Grid.Row="5" Margin="0 20 0 0" Width="500" Content="Войти" Background="Black" Foreground="#FFC8D1D8"/>
                 <Button x:Name="reg" MouseLeave="reg_MouseLeave" MouseEnter="reg_MouseEnter" FontFamily="Leelawadee UI Semilight" Click="Button_Click_1" HorizontalAlignment="Center" Grid.Row="5" Margin="0 20 0 0" Width="176" Content="Зарегистрироваться" Background="{x:Null}" Foreground="Black" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
 
 

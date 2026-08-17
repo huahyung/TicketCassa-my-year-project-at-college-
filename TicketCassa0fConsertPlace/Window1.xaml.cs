@@ -46,7 +46,7 @@ namespace TicketCassa0fConsertPlace
            
            
 
-            string commandText2 = $"SELECT login, Familia, Name, Otchestvo FROM sotrudniki WHERE login='{log}' AND CAST(AES_DECRYPT(password, 'mysecretkey')AS CHAR) = '{pw}';";
+            string commandText2 = $"SELECT idDoljnost , login, Familia, Name, Otchestvo FROM sotrudniki WHERE login='{log}' AND CAST(AES_DECRYPT(password, 'mysecretkey')AS CHAR) = '{pw}';";
 
             MySqlConnection connection = new MySqlConnection(ConnectionString);
                 
@@ -55,15 +55,33 @@ namespace TicketCassa0fConsertPlace
                     MySqlDataAdapter dataAdapter = new MySqlDataAdapter(commandText2, connection);
                     DataTable dt = new DataTable();
                     dataAdapter.Fill(dt);
+                    
 
-                    if (dt.Rows.Count > 0)
+                    if (dt.Rows.Count > 0 )
                     {
-                        // Успешный вход
-                        Window2 window = new Window2();
-                        window.nameofus.Content = dt.Rows[0]["Familia"].ToString() + " " + dt.Rows[0]["Name"].ToString() + " " + dt.Rows[0]["Otchestvo"].ToString();
-                        window.welcome.Content = "Приветствую Вас, \n" + dt.Rows[0]["Name"].ToString() + " !\n\n" + "Чудесно выглядите !";
-                        window.ShowDialog();
-                        this.Hide(); 
+                        int id = (int)dt.Rows[0]["idDoljnost"];
+                        switch (id)
+                        {
+                            case 1:
+                            // Успешный вход
+                            Window2 window = new Window2(id);
+                            window.nameofus.Content = dt.Rows[0]["Familia"].ToString() + " " + dt.Rows[0]["Name"].ToString() + " " + dt.Rows[0]["Otchestvo"].ToString();
+                            window.welcome.Content = "Приветствую Вас, \n" + dt.Rows[0]["Name"].ToString() + " !\n\n" + "Чудесно выглядите !";
+                            
+                            window.ShowDialog();
+                            this.Hide();
+                            break;
+                            case 2:
+                        
+                                // Успешный вход
+                                Window4 cassier = new Window4(id);
+                                cassier.nameofus.Content = dt.Rows[0]["Familia"].ToString() + " " + dt.Rows[0]["Name"].ToString() + " " + dt.Rows[0]["Otchestvo"].ToString();
+                                cassier.welcome.Content = "Приветствую Вас, \n" + dt.Rows[0]["Name"].ToString() + " !\n\n" + "Чудесно выглядите !";
+                                cassier.ShowDialog();
+                                this.Hide();
+                            break;
+                        }
+                           
                     }
                     else
                     {

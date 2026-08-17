@@ -1,24 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\\u043F\u0430\u043F\u043A\u0438 \u043B\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5AC456E-EA22-4434-892C-8886BB999805}|TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace.csproj|c:\\users\\asus\\desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\ticketcassa0fconsertplace\\ticketcassa0fconsertplace\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B5AC456E-EA22-4434-892C-8886BB999805}|TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace.csproj|C:\\Users\\Asus\\Desktop\\\u043F\u0430\u043F\u043A\u0438 \u043B\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\ticketcassa0fconsertplace\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B5AC456E-EA22-4434-892C-8886BB999805}|TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace.csproj|solutionrelative:ticketcassa0fconsertplace\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5AC456E-EA22-4434-892C-8886BB999805}|TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace.csproj|C:\\Users\\Asus\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\ticketcassa0fconsertplace\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5AC456E-EA22-4434-892C-8886BB999805}|TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace.csproj|solutionrelative:ticketcassa0fconsertplace\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5AC456E-EA22-4434-892C-8886BB999805}|TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace.csproj|C:\\Users\\Asus\\Desktop\\\u043F\u0430\u043F\u043A\u0438 \u043B\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\ticketcassa0fconsertplace\\window4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B5AC456E-EA22-4434-892C-8886BB999805}|TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace.csproj|solutionrelative:ticketcassa0fconsertplace\\window4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 194,
-          "SelectedChildIndex": 3,
+          "DockedHeight": 325,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 325,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,27 +44,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Window2.xaml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace\\Window2.xaml",
-              "RelativeDocumentMoniker": "TicketCassa0fConsertPlace\\Window2.xaml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace\\Window2.xaml*",
-              "RelativeToolTip": "TicketCassa0fConsertPlace\\Window2.xaml*",
+              "DocumentIndex": 1,
+              "Title": "Window4.xaml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\\u043F\u0430\u043F\u043A\u0438 \u043B\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace\\Window4.xaml",
+              "RelativeDocumentMoniker": "TicketCassa0fConsertPlace\\Window4.xaml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\\u043F\u0430\u043F\u043A\u0438 \u043B\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace\\Window4.xaml",
+              "RelativeToolTip": "TicketCassa0fConsertPlace\\Window4.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-28T08:50:56.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T07:20:48.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Window2.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace\\Window2.xaml.cs",
-              "RelativeDocumentMoniker": "TicketCassa0fConsertPlace\\Window2.xaml.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace\\Window2.xaml.cs",
-              "RelativeToolTip": "TicketCassa0fConsertPlace\\Window2.xaml.cs",
-              "ViewState": "AgIAAH4CAAAAAAAAAAAgwJwDAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T08:28:58.382Z",
+              "DocumentIndex": 0,
+              "Title": "Window2.xaml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\\u043F\u0430\u043F\u043A\u0438 \u043B\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace\\Window2.xaml",
+              "RelativeDocumentMoniker": "TicketCassa0fConsertPlace\\Window2.xaml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\\u043F\u0430\u043F\u043A\u0438 \u043B\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u0443\u0440\u0441\u0430\u0447\\TicketCassa0fConsertPlace\\TicketCassa0fConsertPlace\\Window2.xaml*",
+              "RelativeToolTip": "TicketCassa0fConsertPlace\\Window2.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-13T06:37:20.505Z",
               "EditorCaption": ""
             }
           ]

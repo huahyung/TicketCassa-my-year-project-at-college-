@@ -8,6 +8,9 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
                 Title="Регистрация" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" Background="#eff6ff">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/70e61dbbd9f6adc94c501788cf59918d.jpg"/>
+        </Grid.Background>
         <Border MinWidth="400" Margin="10,0,15,0" Background="#ffffff" VerticalAlignment="Center" Padding="30" MaxWidth="850" CornerRadius="20" Height="414">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="#48036F" ShadowDepth="10"/>
@@ -26,7 +29,7 @@
 
                 <TextBox  x:Name="loginnn" materialDesign:HintAssist.Hint="Введите логин" Grid.Row="2" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="48" ></TextBox>
                 <PasswordBox x:Name="passworddd" materialDesign:HintAssist.Hint="Введите пароль"  Grid.Row="3" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" ></PasswordBox>
-                <Button  Click="Button_Click" HorizontalAlignment="Center" Grid.Row="5" Margin="0 20 0 0" Width="500" Content="Зарегистрироваться"/>
+                <Button   Background="Black" Foreground="White" Click="Button_Click" HorizontalAlignment="Center" Grid.Row="5" Margin="0 20 0 0" Width="500" Content="Зарегистрироваться"/>
                 <Button Click="vhod_Click" MouseEnter="vhod_MouseEnter" MouseLeave="vhod_MouseLeave" x:Name="vhod"  FontFamily="Leelawadee UI Semilight" Width="176" Content="Войти" Background="{x:Null}" Foreground="Black" BorderBrush="{x:Null}" BorderThickness="0,0,0,0"/>
 
 

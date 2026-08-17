@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<FlowDocument 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    FontFamily="Arial"
+    PageWidth="300"
+    PageHeight="500"
+    ColumnWidth="300">
+    
+    <FlowDocument.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </FlowDocument.Resources>
+
+    <!-- Заголовок билета -->
+    <BlockUIContainer>
+        <Grid Background="#ff0000" Margin="0">
+            <TextBlock Text="{{ EventName }}" 
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center"
+                       Foreground="Black"
+                       Padding="10"/>
+        </Grid>
+    </BlockUIContainer>
+
+    <!-- Основная информация -->
+    <BlockUIContainer Margin="0,10,0,0">
+        <Border BorderBrush="Black" BorderThickness="2" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Grid.Row="0" Text="{{ EventDate }}" 
+                           FontSize="16" FontWeight="Bold" 
+                           HorizontalAlignment="Center"/>
+                
+                <TextBlock Grid.Row="1" Text="{{ Venue }}" 
+                           FontSize="14" FontWeight="Bold" 
+                           HorizontalAlignment="Center"/>
+                
+                <TextBlock Grid.Row="2" Text="{{ Address }}" 
+                           FontSize="12" 
+                           HorizontalAlignment="Center"/>
+                
+                <TextBlock Grid.Row="3" Text="{{ TicketType }}" 
+                           FontSize="16" FontWeight="Bold" 
+                           Foreground="#ff0000"
+                           HorizontalAlignment="Center"/>
+            </Grid>
+        </Border>
+    </BlockUIContainer>
+
+    <!-- Детали места -->
+    <Paragraph Margin="0,10,0,0">
+        <Bold FontSize="14">Детали концерта:</Bold>
+    </Paragraph>
+
+    {% for info in AdditionalInfo -%}
+    <BlockUIContainer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Text="{{ info.Label }}:" 
+                       FontWeight="Bold" 
+                       Grid.Column="0" 
+                       Margin="5,0,5,0"/>
+            
+            <TextBlock Text="{{ info.Value }}" 
+                       Grid.Column="1" 
+                       Margin="0,0,5,0"/>
+        </Grid>
+    </BlockUIContainer>
+    {% endfor -%}
+
+  
+  
+
+    <!-- Цена и номер билета -->
+    <BlockUIContainer Margin="0,10,0,0">
+        <Border BorderBrush="#ff0000" BorderThickness="2" Padding="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Номер билета:" FontWeight="Bold"/>
+                    <TextBlock Text="{{ TicketNumber }}"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Цена:" FontWeight="Bold" HorizontalAlignment="Right"/>
+                    <TextBlock Text="{{ TicketPrice }}" FontWeight="Bold" Foreground="Green" HorizontalAlignment="Right"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </BlockUIContainer>
+
+    <!-- Штрих-код  -->
+    <BlockUIContainer Margin="0,10,0,0">
+        <Border Background="Black" Height="50" Padding="5">
+            <TextBlock Text="{{ Barcode }}" 
+                       FontFamily="Libre Barcode 128" 
+                       FontSize="30" 
+                       Foreground="White" 
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </Border>
+    </BlockUIContainer>
+
+    <!-- Правила -->
+    <Paragraph Margin="0,10,0,0">
+        <Bold FontSize="12">Правила посещения:</Bold>
+    </Paragraph>
+
+    {% for rule in Rules -%}
+    <Paragraph Margin="0,2,0,0" FontSize="10">
+        • {{ rule }}
+    </Paragraph>
+    {% endfor -%}
+
+    <!-- Линия отрыва -->
+    <Paragraph Margin="0,15,0,0" FontSize="10" FontStyle="Italic" TextAlignment="Center">
+        <Run Text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"/>
+        <LineBreak/>
+        <Run Text="КОНТРОЛЬНЫЙ КУПОН"/>
+    </Paragraph>
+
+</FlowDocument>

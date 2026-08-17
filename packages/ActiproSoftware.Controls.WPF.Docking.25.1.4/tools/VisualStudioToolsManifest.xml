@@ -1,0 +1,11 @@
+<FileList>
+	<File Reference="ActiproSoftware.Docking.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Docking/MDI (for WPF)" BlendCategory="Actipro Docking/MDI (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.Docking.AdvancedTabControl" />
+			<Item Type="ActiproSoftware.Windows.Controls.Docking.DockSite" />
+			<Item Type="ActiproSoftware.Windows.Controls.Docking.WindowControl" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

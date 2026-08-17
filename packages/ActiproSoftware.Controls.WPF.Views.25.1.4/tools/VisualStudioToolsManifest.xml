@@ -1,0 +1,23 @@
+<FileList>
+	<File Reference="ActiproSoftware.Views.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Views (for WPF)" BlendCategory="Actipro Views (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.Views.AnimatedCanvas" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.AnimatedDockPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.AnimatedStackPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.AnimatedWrapPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.Book" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.BookPage" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.FanPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.InertiaScrollViewer" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.MultiColumnPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.SettingsCard" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.SettingsExpander" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.SettingsGroup" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.SwitchPanel" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.TaskBoard" />
+			<Item Type="ActiproSoftware.Windows.Controls.Views.ZapPanel" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

@@ -1,0 +1,12 @@
+<FileList>
+	<File Reference="ActiproSoftware.Wizard.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Wizard (for WPF)" BlendCategory="Actipro Wizard (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.Wizard.AeroWizard" />
+			<Item Type="ActiproSoftware.Windows.Controls.Wizard.CommandButton" />
+			<Item Type="ActiproSoftware.Windows.Controls.Wizard.Wizard" />
+			<Item Type="ActiproSoftware.Windows.Controls.Wizard.WizardPage" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

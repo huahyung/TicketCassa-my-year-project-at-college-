@@ -1,0 +1,13 @@
+<FileList>
+	<File Reference="ActiproSoftware.Navigation.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro Navigation (for WPF)" BlendCategory="Actipro Navigation (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.Navigation.Breadcrumb" />
+			<Item Type="ActiproSoftware.Windows.Controls.Navigation.ExplorerBar" />
+			<Item Type="ActiproSoftware.Windows.Controls.Navigation.NavigationBar" />
+			<Item Type="ActiproSoftware.Windows.Controls.Navigation.NavigationPane" />
+			<Item Type="ActiproSoftware.Windows.Controls.Navigation.ZoomContentControl" />
+
+		</ToolboxItems>
+	</File>
+</FileList>

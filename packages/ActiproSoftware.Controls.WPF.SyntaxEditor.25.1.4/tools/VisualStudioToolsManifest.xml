@@ -1,0 +1,12 @@
+<FileList>
+	<File Reference="ActiproSoftware.SyntaxEditor.Wpf.dll">
+		<ToolboxItems UIFramework="WPF" VSCategory="Actipro SyntaxEditor (for WPF)" BlendCategory="Actipro SyntaxEditor (for WPF)">
+
+			<Item Type="ActiproSoftware.Windows.Controls.SyntaxEditor.NavigableSymbolSelector" />
+			<Item Type="ActiproSoftware.Windows.Controls.SyntaxEditor.SyntaxEditor" />
+			<Item Type="ActiproSoftware.Windows.Controls.SyntaxEditor.TextStylePreview" />
+			<Item Type="ActiproSoftware.Windows.Controls.SyntaxEditor.Primitives.EditorSearchView" />
+
+		</ToolboxItems>
+	</File>
+</FileList>
